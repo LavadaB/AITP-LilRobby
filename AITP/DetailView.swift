@@ -27,16 +27,19 @@ struct DetailView: View {
             // in Detail Function we call in same parameters
             //Start with [0] to loop thorugh arraay
            
-            HStack {
+            VStack(alignment: .leading) { // this was added for push cfor lavaded
                 
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-                    .font(.title)
-                    .fontWeight(.semibold)
-                    .padding(.trailing)
-                
-                Image(systemName: "star")
-                    .font(.title)
-                    .padding(.top, 4)
+                HStack {
+                    
+                    Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                        .font(.title)
+                        .fontWeight(.semibold)
+                        .padding(.trailing)
+                    
+                    Image(systemName: "star")
+                        .font(.title)
+                        .padding(.top, 4)
+                }
             }
             
         }
